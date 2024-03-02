@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    padding:0;
+    margin: 0;
+    
+    
+}
+/* these property are set to have a blurred effect of background */
+body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-image: url("images/pexels-pixabay-417122.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px); /* Adjust the blur radius as needed */
+    z-index: -1; /* Send the blurred overlay to the back */
+}
+
+
+h1{
+    
+    height: 45px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.user-box{
+    width:700px;
+    height: 340px;
+    /* these below four property set the box horizontally */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    top:50px;
+
+    /* creating shadow effect for the box */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.339), 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+    
+    background-image: url("images/pexels-pixabay-417122.jpg");
+    background-position: center;
+    background-size: cover;
+    
+
+    background-color: rgb(176, 186, 186);
+    border-radius: 10px;
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.search-bar{
+  width: 100%;
+  max-width: 380px;
+  margin: 0;
+  border: none;
+  background: rgba(200, 187, 187, 0.529);
+  display: flex;
+  align-items: center; 
+  padding: 8px 20px;
+  border-radius: 10px;
+
+  /* set the positon of search bar*/
+  position:absolute;
+  top:130px;
+}
+.search-bar input{
+    background: transparent;
+    
+    flex: 1;
+    outline: none;
+    border:0 ;
+    padding :6px;
+    font-size: 1rem;
+    
+}
+
+
+
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+
+.search-bar button img{
+   width: 22px;
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    width:38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgba(223, 215, 215, 0.908);
+    transition-duration: 0.2s;
+}
+
+.icon-container{
+    position:absolute;
+    bottom: 0px;
+    height: 196px;
+    width: 100%;
+    background-color: #c11d38;
+    background-image: linear-gradient(315deg, #c11d38 0%, #ffc857 74%);
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+.icon-container > div {
+    padding:10px;
+    
+    width: 34%;
+   
+   
+
+    
+}
+
+.icon-1{
+    background-image: url("images/jordan-steranka-kTmejagP9v4-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+/* Here i am editing the svg thermometer icon */
+
+.icon-1 svg .part1{
+    fill: rgba(255, 34, 0, 0.943);
+}
+
+.icon-1 svg .part2{
+    fill:rgba(255, 132, 0, 0.966);
+}
+
+.icon-2{
+    background-image: url("images/25501.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+.icon-2 svg{
+    fill:rgba(59, 11, 201, 0.9);
+    position: relative;
+    top:10px;
+    left: 15px;
+    
+}
+
+.icon-3{
+    background: linear-gradient(115deg, #5efce8, #736efe);
+}
+
+
+.icon-3 svg{
+    fill: rgb(0, 157, 255);
+    opacity: 1;
+    
+}
+
+
+ 
+.icon-3 span{
+    position: absolute;
+    top:45px;
+    margin-left: 240px;
+    font-size: 3.3rem;
+    color: rgb(223, 236, 248);
+}
+.icon-2 span{
+    position: absolute;
+    top:45px;
+    margin-left: 200px;
+    font-size: 3.3rem;
+    color: rgb(27, 27, 27);
+}
+
+.icon-1 span{
+    
+    position: absolute;
+    top:45px;
+    margin-left: 190px;
+    font-size: 3.3rem;
+    color: rgb(248, 64, 3);
+}
+
+
+#icon-1-txt::after {
+    content: "\2103";
+    
+    
+}
+
+#icon-2-txt::after{
+    content: " Km/h";
+    font-size: 2.0rem;
+    color: #010d25ef;
+}
+#icon-3-txt::after{
+    content: "%";   
+    
+}
+
